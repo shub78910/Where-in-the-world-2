@@ -14,4 +14,4 @@ Features:
 What I used? 
 -> ReactJS, React-Router, Context API, Font awesome for icons.
 
-Live Link: 
+Live Link: https://where-in-the-world-shub78910.netlify.app/

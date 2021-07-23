@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body {
+    --accent-color: orangered;
+    --background-color-detail: white;
+    --background-color: white;
+    --background-color-secondary:whitesmoke;
+    --text-color: black;
+    --button-text-color: var(--background-color);
+    --button-text-color-sec:wheat;
+    --transition-delay: 1s;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    transition: var(--transition-delay);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  body.dark {
+    --accent-color: #D0D066;
+    --background-color: #202d36;
+    --background-color-secondary:#2b3743;
+    --background-color-detail: #202d36;
+    --button-text-color-sec:whitesmoke;
+    --text-color: white;
+  }
+
+  nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+    margin-top: -0.5rem;
+    background-color: var(--background-color-secondary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+}
+header div{
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button{
+    cursor: pointer;
+    background: var(--button-text-color-sec);
+    border: none;
+    color: black;
+    height: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header input{
+    background-color: var(--background-color-secondary);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: none;
+    color: var(--text-color);
+    width: 90%;
+    border-radius: 0.2rem;
+}
+header button{
+    background-color: var(--background-color-secondary);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: none;
+    color: var(--text-color);
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.filterWrapper select{
+    background-color: var(--background-color-secondary);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,51 @@
+body{
+    --background-color: white;
+    --background-color-detail: #2b3743;
+    --text-color: black;
+    --button-text-color: var(--background-color);
+    --transition-delay: 1s;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.flagCardsWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flagCard{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: black 1px 2px 8px 1px;
+
+}
+.flagCard:hover{
+    box-shadow: black 1px 1px 15px 1px;
+    transition: ease 0.5s ;
+}
+.flagImage{
+    width: 15rem;
+    height: 10rem;
+}
+.countryDetails{
+    text-align: left;
+    background-color: var(--background-color-detail);
+    padding: 0.5rem;
+    margin-top: -0.5rem;
+    width: 14rem;
+    height: 10rem;
+}
+
+.descriptiveDetailWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descriptiveDetailWrapper div{
+    margin: 1rem;
+}

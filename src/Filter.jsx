@@ -8,11 +8,13 @@ function Filter({ setCountries,setLoader,showData }) {
     const [selectedRegion, setSelectedRegion] = useState("")
 
     useEffect(() => {
-        setLoader(true)  
-        fetch(`https://restcountries.eu/rest/v2/region/${selectedRegion}`)
-            .then(res => res.json())
-            .then(data => showData(data))
-            .catch(console.log("errrrrror"))
+        if (selectedRegion.length > 0) {
+            setLoader(true)
+            fetch(`https://restcountries.eu/rest/v2/region/${selectedRegion}`)
+                .then(res => res.json())
+                .then(data => showData(data))
+                .catch(console.log("errrrrror"))
+        }
 
 
     }, [selectedRegion])

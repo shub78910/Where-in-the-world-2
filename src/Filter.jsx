@@ -23,7 +23,7 @@ function Filter({ setCountries,setLoader,showData }) {
         <div className="filterWrapper">
             <select>
                 {regions.map((item) => {
-                    return <option className="regionOption" key={item} onClick={(e) => setSelectedRegion(e.target.innerText)}>{item}</option>
+                    return <option className="regionOption" key={item} onClick={(e) =>{ console.log("filter clicked") ; setSelectedRegion(e.target.innerText)}}>{item}</option>
                 })}
             </select>
         </div>

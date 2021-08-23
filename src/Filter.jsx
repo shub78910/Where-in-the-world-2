@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./app.css"
 
 
-function Filter({ setCountries,setLoader,showData }) {
+function Filter({ setCountries, setLoader, showData }) {
     let regions = ["Asia", "Americas", "Africa", "Europe", "Oceania"]
 
     const [selectedRegion, setSelectedRegion] = useState("")
@@ -21,11 +21,13 @@ function Filter({ setCountries,setLoader,showData }) {
 
     return (
         <div className="filterWrapper">
-            <select>
-                {regions.map((item) => {
-                    return <option className="regionOption" key={item} onClick={(e) =>{ console.log("filter clicked") ; setSelectedRegion(e.target.innerText)}}>{item}</option>
-                })}
-            </select>
+            <div data-tap-disabled="true">
+                <select>
+                    {regions.map((item) => {
+                        return <option className="regionOption" key={item} onClick={(e) => { console.log("filter clicked"); setSelectedRegion(e.target.innerText) }}>{item}</option>
+                    })}
+                </select>
+            </div>
         </div>
     )
 }

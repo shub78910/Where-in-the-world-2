@@ -22,9 +22,11 @@ function Filter({ setCountries, setLoader, showData }) {
     return (
         <div className="filterWrapper">
             <div data-tap-disabled="true">
-                <select>
+                <select onChange={(e) => {setSelectedRegion(e.target.value) }}>
                     {regions.map((item) => {
-                        return <option className="regionOption" key={item} onClick={(e) => { console.log("filter clicked"); setSelectedRegion(e.target.innerText) }}>{item}</option>
+                        return (
+                            <option className="regionOption" key={item}>{item}</option>
+                        )
                     })}
                 </select>
             </div>
